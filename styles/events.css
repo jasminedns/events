@@ -1,0 +1,81 @@
+:root {
+    --color-main: #0e5c4b;
+    --color-secondary: #1a9973;
+    --color-terciary: #fff;
+    --spacing-small: 8px;
+    --spacing-base: 16px;
+    --spacing-large: 24px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.header {
+    background-color: var(--color-terciary);
+    padding: var(--spacing-base);
+}
+
+.header h1 {
+    color: var(--color-main);
+    font-size: 3rem;
+    margin: 0;
+    text-align: center;
+}
+
+.animal-tabs {
+    background-color: var(--color-main);
+    display: flex;
+    justify-content: space-evenly;
+    padding: var(--spacing-small) var(--spacing-large);
+
+}
+
+.tab {
+    background-color: var(--color-terciary);
+    border-radius: 10px;
+    color: var(--color-main);
+    font-weight: 700;
+    padding: var(--spacing-small) var(--spacing-base);
+}
+
+.active {
+    background-color: var(--color-secondary);
+    color: var(--color-terciary);
+}
+
+.content {
+    display: none;
+    border-radius: 10px;
+    background-color: var(--color-main);
+    color: var(--color-terciary);
+
+}
+
+.featured {
+    display: block;
+    margin-top: var(--spacing-small);
+    padding: var(--spacing-base);
+}
+
+.search-field {
+    color: var(--color-main);
+    font-weight: bolder;
+    padding: var(--spacing-base);
+    text-align: center;
+}
+
+.search-field input {
+    border-color: var(--color-main);
+    border-radius: 10px;
+    padding: var(--spacing-small);
+}
